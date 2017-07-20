@@ -15,6 +15,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'binding_of_caller'
 end
 group :development do
   gem 'web-console', '>= 3.3.0'
@@ -30,6 +31,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'slim-rails'
 gem 'therubyracer', :platform=>:ruby
+gem "pundit"
 
 group :development do
   gem 'better_errors'

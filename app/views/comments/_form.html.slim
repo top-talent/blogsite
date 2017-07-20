@@ -1,0 +1,5 @@
+= form_for(article_comments_path(@article)) do |f|
+  .form-group
+    = f.label :content
+    = f.text_area :content, class: "form-control", rows: 5
+  .actions.form-group = f.submit "Add Comment", class: 'btn btn-primary pull-right'

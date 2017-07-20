@@ -4,6 +4,7 @@ table.table.table-hover.table-striped
   thead
     tr
       th Title
+      th Creator
       th Content
       th
       th
@@ -13,10 +14,18 @@ table.table.table-hover.table-striped
     - @articles.each do |article|
       tr
         td = article.title
+        td = article.creator.email
         td = article.content
-        td = link_to 'Show', article
-        td = link_to 'Edit', edit_article_path(article)
-        td = link_to 'Destroy', article, data: { confirm: 'Are you sure?' }, method: :delete
+        td
+          = link_to article_path(article), class: 'btn-sm btn-info' do
+            i.fa.fa-eye
+        td
+          = link_to edit_article_path(article), class: 'btn-sm btn-primary' do
+            i.fa.fa-edit
+        td
+          = link_to article, data: { confirm: 'Are you sure?' }, method: :delete, class: 'btn-sm btn-danger' do
+            i.fa.fa-trash
+
 
 br
 
