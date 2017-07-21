@@ -18,8 +18,8 @@ development:
   encoding: unicode
   database: shop_development
   pool:     5
-  username: root
-  password: Qwer1234!
+  username: postgres
+  password: root
   template: template0
 
   # Connect on a TCP socket. Omitted by default since the client uses a
