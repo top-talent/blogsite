@@ -32,6 +32,9 @@ gem 'pg'
 gem 'slim-rails'
 gem 'therubyracer', :platform=>:ruby
 gem "pundit"
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick'
+gem 'fog'
 
 group :development do
   gem 'better_errors'
